@@ -1,4 +1,4 @@
-# MoviesReview Project
+# myMovieList Project
 
 This project is a movie review platform where users can search for movies, add reviews, and maintain their personal movie collection. It is built using Node.js, Express, MongoDB, and the TMDB API.
 
@@ -23,8 +23,8 @@ This project is a movie review platform where users can search for movies, add r
    cd moviesreview
 2. **Install dependencies:**
     npm install
-3. **Setup environment variables**
+3. **Setup environment variables:**
     Create a .env file in the root directory using the provided .env.example as a reference.
     Fill in the required values, such as your TMDB API key and MongoDB connection URI.
-4. **Run the project**
+4. **Run the project:**
     npm start
