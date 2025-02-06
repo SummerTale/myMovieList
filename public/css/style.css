@@ -1,0 +1,228 @@
+/* General styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  header {
+    background-color: #283593; /* Dark blue */
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  header nav {
+    margin-top: 1rem;
+  }
+  
+  header a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .search-bar {
+    margin: 1rem auto;
+    text-align: center;
+  }
+  
+  .search-bar input {
+    padding: 0.5rem;
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .search-bar button {
+    padding: 0.6rem 1.2rem;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #ffc107;
+  }
+  
+  .movies-list, .user-collection {
+    max-width: 1000px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+  }
+  
+  .movie-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .movie-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .movie-item img {
+    width: 100%;
+    height: 375px; /* Fixed height for uniform poster size */
+    object-fit: cover; /* Ensures image is cropped and scaled properly */
+  }
+  
+  .movie-item h2 {
+    font-size: 1.25rem;
+    color: #283593;
+    padding: 1rem;
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  .movie-item p {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    color: #666;
+    flex-grow: 1;
+  }
+  
+  .movie-item a {
+    display: block;
+    padding: 1rem;
+    background-color: #ffcc00;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-top: auto;
+  }
+  
+  .movie-item a:hover {
+    background-color: #ffc107;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #283593;
+    color: #fff;
+    margin-top: 2rem;
+    position: sticky;
+    bottom: 0;
+  }
+  
+  /* For movie details page */
+  .movie-details {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movie-details h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #283593;
+  }
+  
+  .movie-details p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .review-form {
+    margin-top: 2rem;
+  }
+  
+  .review-form h3 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .review-form textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .review-form button {
+    padding: 0.75rem 1.5rem;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .review-form button:hover {
+    background-color: #ffc107;
+  }
+
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Authentication Section */
+.auth-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-section h2 {
+  margin-bottom: 1rem;
+  color: #283593;
+}
+
+.auth-section form {
+  margin-bottom: 2rem;
+}
+
+.auth-section input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.auth-section button {
+  padding: 0.75rem 1.5rem;
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.auth-section button:hover {
+  background-color: #ffc107;
+}

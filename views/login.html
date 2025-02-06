@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Register</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Review Website</h1>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/user-collection.html">My Collection</a>
+          <a href="/login.html" id="auth-link">Login</a>
+          <button id="logout-button" style="display: none;">Logout</button>
+        </nav>
+      </header>      
+
+  <section class="auth-section">
+    <!-- Login Form -->
+    <div id="login-form">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" required />
+        <input type="password" id="loginPassword" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <!-- Registration Form -->
+    <div id="register-form">
+      <h2>Register</h2>
+      <form id="registerForm">
+        <input type="text" id="registerUsername" placeholder="Username" required />
+        <input type="email" id="registerEmail" placeholder="Email" required />
+        <input type="password" id="registerPassword" placeholder="Password" required />
+        <button type="submit">Register</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Movie Review Website</p>
+  </footer>
+
+  <script src="/js/auth.js"></script>
+</body>
+</html>
